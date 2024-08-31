@@ -60,7 +60,7 @@ git clone https://github.com/Abdelrahman1810/UVM-AES-Verilog.git
 
 3. Compile the HDL files by executing the following command in the QuestaSim transcript tap: 
 ```ruby
-do run.do
+do run.tcl
 ```
 ---
 
