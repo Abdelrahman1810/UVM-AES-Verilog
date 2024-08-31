@@ -20,26 +20,26 @@ vlog {michaelehab_AES-Verilog/AES_Encrypt_tb.v}
 
 # ------------------------------------
 
-vlog -coveropt 3 +cover +acc {UVM/shared_pkg.sv}
-vlog -coveropt 3 +cover +acc {UVM/sequenceItem.sv}
-vlog -coveropt 3 +cover +acc {UVM/main_sequence.sv}
+vlog -coveropt 3 +cover +acc {UVM/shared_pkg/shared_pkg.sv}
+vlog -coveropt 3 +cover +acc {UVM/objects/sequenceItem/sequenceItem.sv}
+vlog -coveropt 3 +cover +acc {UVM/objects/sequences/main_sequence.sv}
 
-vlog -coveropt 3 +cover +acc {UVM/AES_intf.sv}
+vlog -coveropt 3 +cover +acc {UVM/interface/AES_intf.sv}
 
-vlog -coveropt 3 +cover +acc {UVM/configration.sv}
+vlog -coveropt 3 +cover +acc {UVM/objects/configration/configration.sv}
 
-vlog -coveropt 3 +cover +acc {UVM/driver.sv}
-vlog -coveropt 3 +cover +acc {UVM/monitor.sv}
-vlog -coveropt 3 +cover +acc {UVM/sequencer.sv}
+vlog -coveropt 3 +cover +acc {UVM/testbench_top/test/env/agent/driver/driver.sv}
+vlog -coveropt 3 +cover +acc {UVM/testbench_top/test/env/agent/monitor/monitor.sv}
+vlog -coveropt 3 +cover +acc {UVM/testbench_top/test/env/agent/sequencer/sequencer.sv}
 
-vlog -coveropt 3 +cover +acc {UVM/agent.sv}
-vlog -coveropt 3 +cover +acc {UVM/scoreboard.sv}
-vlog -coveropt 3 +cover +acc {UVM/subscriber.sv}
+vlog -coveropt 3 +cover +acc {UVM/testbench_top/test/env/agent/agent.sv}
+vlog -coveropt 3 +cover +acc {UVM/testbench_top/test/env/scoreboard/scoreboard.sv}
+vlog -coveropt 3 +cover +acc {UVM/testbench_top/test/env/subscriber/subscriber.sv}
 
-vlog -coveropt 3 +cover +acc {UVM/env.sv}
+vlog -coveropt 3 +cover +acc {UVM/testbench_top/test/env/env.sv}
 
-vlog -coveropt 3 +cover +acc {UVM/test.sv}
-vlog -coveropt 3 +cover +acc {UVM/top.sv}
+vlog -coveropt 3 +cover +acc {UVM/testbench_top/test/test.sv}
+vlog -coveropt 3 +cover +acc {UVM/testbench_top/top.sv}
 
 # ------------------------------------
 
