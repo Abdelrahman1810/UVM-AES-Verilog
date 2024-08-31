@@ -11,9 +11,44 @@ AES (Advanced Encryption Standard) is a widely used symmetric encryption algorit
 
 ---
 
+##  UVM hierarchy
+
+```sh
+└── UVM-AES-Verilog.git/
+    ├── UVM
+    │   ├── interface
+    │   │   └── AES_intf.sv
+    │   ├── objects
+    │   │   ├── configration
+    │   │   │   └── configration.sv
+    │   │   ├── sequenceItem
+    │   │   │   └── sequenceItem.sv
+    │   │   └── sequences
+    │   │       └── main_sequence.sv
+    │   ├── shared_pkg
+    │   │   └── shared_pkg.sv
+    │   └── testbench_top
+    │       ├── test
+    │       │   ├── env
+    │       │   │   ├── agent
+    │       │   │   ├── env.sv
+    │       │   │   ├── scoreboard
+    │       │   │   └── subscriber
+    │       │   └── test.sv
+    │       └── top.sv
+    ├── michaelehab_AES-Verilog
+    │   ├── ...
+    │   ├── ...
+    │   └── ...
+    └── run.tcl
+```
+
+---
+
+
 ## Getting Started
 To get started with this repository, follow these steps:
-> [!IMPORTANT]
+> [!NOTE]
 > You need to have [QuestaSim](https://support.sw.siemens.com/en-US/) installed on your machine.
 
 1. Clone the repository to your local machine using the following command:
